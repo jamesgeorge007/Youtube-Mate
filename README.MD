@@ -2,7 +2,10 @@
 
 ## Basic Info
 
-A Desktop Application which does the task of converting youtube videos to mp3 with ease built on top of Electron JS.
+Convert Youtube videos to mp3 file with ease using this Desktop application.
+
+**status**
+> Development Stage
 
 
 
