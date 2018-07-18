@@ -2,13 +2,13 @@
   "name": "youtube-mate",
   "version": "1.0.0",
   "description": "A Desktop App that lets you convert youtube videos to mp3 files.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "author": "James George",
   "license": "ISC",
-  "devDependencies": {
-    "electron": "^2.0.2"
+  "dependencies": {
+    "electron": "^2.0.5"
   }
 }
