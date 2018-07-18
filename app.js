@@ -2,6 +2,7 @@ const { app, BrowserWindow, Menu } = require('electron')
 const path = require('path')
 const url = require('url')
 const shell = require('electron').shell
+const globalShortcut = require('electron').globalShortcut
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -17,6 +18,16 @@ let win
         protocol: 'file:',
         slashes: true
     }))
+    //***//
+        //***//
+        globalShortcut.register('f5', () => {
+            console.log('f5 is pressed')
+            win.reload()
+        })
+        globalShortcut.register('CommandOrControl+R', () => {
+            console.log('CommandOrControl+R is pressed')
+            win.reload()
+        })
 
     // Open the DevTools.
     //win.webContents.openDevTools()
@@ -32,13 +43,13 @@ let win
     var menu = Menu.buildFromTemplate([{
         label: 'Menu',
         submenu: [
-            { label: 'Developer',
+            { label: 'Developer Profile',
               click(){
-                shell.openExternal('https://jamesgeorge007.github.io')
+                shell.openExternal('https://github.com/jamesgeorge007')
               }
               },
             {
-                label: 'CoinMarkerMap',
+                label: 'Youtube',
                 click(){
                     shell.openExternal('https://youtube.com')
                 }

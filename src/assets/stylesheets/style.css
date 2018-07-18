@@ -1,5 +1,47 @@
-*{
-	padding: none;
-	margin: none;
-	outline: none;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	background-color: #f00;
+}
+.container{
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto';
+}
+input[type="text"]{
+	margin-top: 5vh;
+	font-size: 2em;
+	padding: 16px;
+	border-radius: .375rem;
+	width: 60%;
+	border: 2px solid #2e2e2e;
+}
+input[type="text"]:focus{
+	transition: all 0.4s ease-in-out;
+	width: 75%;
+}
+button{
+	margin-top: 3vh;
+	border: none;
+	font-size: 2.2em;
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 12px;
+	border-radius: .375rem;
+	width: 50%;
+}
+button:hover{
+	transition: all 0.4s ease-in-out;
+	background-color: #fff;
+	color: #000;
+	border-color: #000;
+	cursor: pointer;
+	box-shadow: 0 0 5px #ccc;
+}
+button:hover:after{
+	transition: all 0.4s ease-in-out;
+	content: ' >>';
+}
+button:active{
+	transform: translateY(8px);
 }
